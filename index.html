@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt AI Next-Step</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="phone-screen">
+        <div class="header">
+            <h1>Trip Complete</h1>
+            <p>How was your trip with Adrina?</p>
+        </div>
+
+        <div class="rating-section">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star faded">☆</span>
+        </div>
+
+        <div class="simulation-buttons">
+    <a href="#" id="simulate-park">Simulate Park Arrival</a>
+    <a href="#" id="simulate-downtown">Simulate Downtown Arrival</a>
+      </div>
+
+        <div class="divider"></div>
+
+        <div class="next-step-box">
+            <h2>What's Next?</h2>
+            <div id="suggestion-content">
+                <!-- AI suggestion will appear here. Start with a loader. -->
+                <div class="loader"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

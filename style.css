@@ -1,0 +1,144 @@
+/* ✅ Fix for problem 2: Ensure full height for flex centering */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f2f5;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Phone screen layout */
+.phone-screen {
+    width: 375px;
+    height: 750px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Header styling */
+.header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #6c757d;
+    margin-top: 0;
+}
+
+/* Rating section */
+.rating-section {
+    margin: 20px 0;
+}
+
+.star {
+    font-size: 40px;
+    color: #ffc107;
+    cursor: pointer;
+}
+
+.star.faded {
+    color: #e0e0e0;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: #32BB78; /* Bolt Green */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 0;
+    width: 90%;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Divider line */
+.divider {
+    width: 90%;
+    height: 1px;
+    background-color: #e9ecef;
+    margin: 40px 0;
+}
+
+/* Next step content */
+.next-step-box {
+    width: 100%;
+}
+
+.next-step-box h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* --- The Loading Spinner --- */
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #32BB78; /* Bolt Green */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+/* ✅ Fix for problem 1: Removed non-breaking space */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.simulation-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.simulation-buttons a {
+    color: #32BB78;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.suggestion-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    padding: 0 15px;
+    margin: 10px 0;
+}
+
+.suggestion-btn {
+    background-color: #32BB78; /* Bolt Green */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 0;
+    width: 80%;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.error-text {
+    color: #dc3545;
+    font-size: 16px;
+    padding: 0 15px;
+}
