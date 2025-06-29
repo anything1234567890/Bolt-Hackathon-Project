@@ -36,4 +36,11 @@ The project is a proof-of-concept web application built with HTML, CSS, and Java
 ## 🌐 Live Demo Link
 
 [*https://anything1234567890.github.io/Bolt-Hackathon-Project/*]
+## Important Security Note
+
+The API key originally used for this project has been invalidated and removed for security purposes.
+
+### How to Run This Project
+
+To run this project locally, you will need to generate your own free API key from Google AI Studio and paste it into the geminiApiKey variable in the script.js file.
 
