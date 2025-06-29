@@ -20,12 +20,12 @@ downtownButton.addEventListener("click", (event) => {
 
 // 3. The main AI function, now modified to update the screen
 async function getAISuggestion(destination, time) {
-    console.log(`Asking Gemini about: ${destination}`); // ✅ Fixed template literal
+    console.log(`Asking Gemini about: ${destination}`);
 
     // Show the loader on the screen while we wait for the AI
-    suggestionBox.innerHTML = `<div class="loader"></div>`; // ✅ Fixed string wrapping
+    suggestionBox.innerHTML = `<div class="loader"></div>`; 
 
-    // ✅ Fixed prompt as a proper template string
+    
    const prompt = `You are the 'Next-Step' AI for the Bolt app. Follow these rules strictly:
 1. If the destination is 'Central Park', your suggestion MUST be about Bolt Scooters.
 2. If the destination is 'Downtown City Center', your suggestion MUST be about Bolt Food.
@@ -34,7 +34,7 @@ A user just arrived at "${destination}" at ${time}.
 
 Based on the rules above, provide one useful next action. Your response must be only a valid JSON object with two keys: "suggestion_text" and "button_text".`;
 
-    // ✅ Fixed apiUrl string
+  
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${geminiApiKey}`;
 
     try {
@@ -54,7 +54,6 @@ Based on the rules above, provide one useful next action. Your response must be 
 
         const rawText = data.candidates[0].content.parts[0].text;
 
-        // ✅ Fixed replace syntax (and cleaned up code block markers)
         const cleanedText = rawText.replace(/```json/g, "").replace(/```/g, "").trim();
         const suggestion = JSON.parse(cleanedText);
 
@@ -68,7 +67,7 @@ Based on the rules above, provide one useful next action. Your response must be 
 
     } catch (error) {
         console.error("Error asking Gemini AI:", error);
-        // ✅ Fixed error message syntax
+        
         suggestionBox.innerHTML = `<p class="error-text">Oops! Something went wrong. Please try again.</p>`;
     }
 }
