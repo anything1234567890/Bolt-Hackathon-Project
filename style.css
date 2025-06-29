@@ -1,4 +1,4 @@
-/* ✅ Fix for problem 2: Ensure full height for flex centering */
+
 html, body {
     height: 100%;
     margin: 0;
@@ -97,7 +97,7 @@ body {
     margin: 0 auto;
 }
 
-/* ✅ Fix for problem 1: Removed non-breaking space */
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
