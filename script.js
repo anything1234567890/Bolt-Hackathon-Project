@@ -1,6 +1,6 @@
 // --- Day 3: Connecting the Brain to the Screen ---
 
-const geminiApiKey = "AIzaSyARq2B-WRPCfgA3y6GfnxVIrQLJ04hsTM8";
+const geminiApiKey = "YOUR_API_KEY_HERE";//KEY HAS BEEN INVALIDATED FOR SECURITY REASONS
 
 // 1. Get references to our HTML elements from the page
 const parkButton = document.getElementById("simulate-park");
